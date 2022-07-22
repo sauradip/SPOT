@@ -1,3 +1,6 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/semi-supervised-temporal-action-detection/semi-supervised-action-detection-on)](https://paperswithcode.com/sota/semi-supervised-action-detection-on?p=semi-supervised-temporal-action-detection)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/semi-supervised-temporal-action-detection/semi-supervised-action-detection-on-thumos-14)](https://paperswithcode.com/sota/semi-supervised-action-detection-on-thumos-14?p=semi-supervised-temporal-action-detection)
+
 <div align="center">
 
 <h1>Semi-Supervised Temporal Action Detection with Proposal-Free Masking</h1>
