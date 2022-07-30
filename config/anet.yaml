@@ -5,7 +5,7 @@ dataset:
     video_info_path_unlabeled: "./data/activitynet_annotations/"
     video_anno_path: "./data/activitynet_annotations/anet_anno_action.json"
     num_frame: 16
-    output_path: '/media/phd/SAURADIP5TB/GSM_SSTAL/output/'
+    output_path: '/path/to/output/'
     unlabel_percent: 0.9
     use_semi: True
     
@@ -14,7 +14,7 @@ dataset:
     video_info_path_unlabeled: "./data/activitynet_annotations/"
     video_anno_path: "./data/activitynet_annotations/anet_anno_action.json"
     num_frame: 16
-    output_path: '/media/phd/SAURADIP5TB/GSM_SSTAL/output/'
+    output_path: '/path/to/output/'
     unlabel_percent: 0.9
     use_semi: True
 
@@ -28,11 +28,11 @@ training:
   learning_rate: 0.0004
   weight_decay: 0.005
   max_epoch: 25
-  checkpoint_path: "/media/phd/SAURADIP5TB/GSM_SSTAL/"
+  checkpoint_path: "/path/to/output/"
   random_seed: 1
   step: 10
   gamma: 0.2
-  feature_path: "/media/phd/SAURADIP5TB/BMN-DATA/csv_mean_100/"
+  feature_path: "/path/to/data/"
   num_gpu: 1
 
 loss:
