@@ -1,0 +1,48 @@
+dataset:
+  num_classes: 200
+  training:
+    video_info_path: "./data/activitynet_annotations/video_info_new.csv"
+    video_info_path_unlabeled: "./data/activitynet_annotations/"
+    video_anno_path: "./data/activitynet_annotations/anet_anno_action.json"
+    num_frame: 16
+    output_path: '/media/phd/SAURADIP5TB/GSM_SSTAL/output/'
+    unlabel_percent: 0.9
+    use_semi: True
+    
+  testing:
+    video_info_path: "./data/activitynet_annotations/video_info_new.csv"
+    video_info_path_unlabeled: "./data/activitynet_annotations/"
+    video_anno_path: "./data/activitynet_annotations/anet_anno_action.json"
+    num_frame: 16
+    output_path: '/media/phd/SAURADIP5TB/GSM_SSTAL/output/'
+    unlabel_percent: 0.9
+    use_semi: True
+
+model:
+  embedding_head: 4
+  feat_dim: 400
+  temporal_scale: 100
+
+training:
+  batch_size: 100
+  learning_rate: 0.0004
+  weight_decay: 0.005
+  max_epoch: 25
+  checkpoint_path: "/media/phd/SAURADIP5TB/GSM_SSTAL/"
+  random_seed: 1
+  step: 10
+  gamma: 0.2
+  feature_path: "/media/phd/SAURADIP5TB/BMN-DATA/csv_mean_100/"
+  num_gpu: 1
+
+loss:
+  lambda_1: 0.5
+  lambda_2: 0.4
+
+testing:
+  cls_thresh: 0.01
+  mask_thresh: [0,0.2,0.4,0.6,0.8]
+  class_thresh: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9]
+  top_k_snip: 10
+  top_k: 500
+  nms_thresh: 0.6
