@@ -28,7 +28,7 @@
 </h4>
 <table>
 <tr>
-    <td><img src="asserts/SPOT_Combo.gif" width="100%"/></td>
+    <td style="border:none"><img src="asserts/SPOT_Combo.gif" width="100%"/></td>
 </tr>
 </table>
 
