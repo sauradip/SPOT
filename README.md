@@ -26,9 +26,9 @@
   <a href="" target='_blank'>[Project Page]</a> •
   <a href="https://arxiv.org/abs/2207.07059" target='_blank'>[arXiv]</a>
 </h4>
-<table>
-<tr>
-    <td style="border:none"><img src="asserts/SPOT_Combo.gif" width="100%"/></td>
+<table style="border:none;border-color:white;">
+<tr style="border:0px;border-color:white;">
+    <td style="border:0px;border-color:white;"><img src="asserts/SPOT_Combo.gif" width="100%"/></td>
 </tr>
 </table>
 
