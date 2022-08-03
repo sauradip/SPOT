@@ -22,10 +22,10 @@
 
 <h3><strong>Accepted to <a href='https://eccv2022.ecva.net/' target='_blank'>ECCV 2022</a></strong></h3>
 
-<h4 align="center">
-  <a href="" target='_blank'>[Project Page]</a> •
-  <a href="https://arxiv.org/abs/2207.07059" target='_blank'>[arXiv]</a>
-</h4>
+<h3 align="center">
+  <a href="https://arxiv.org/abs/2207.07059" target='_blank'>Paper</a> |
+  <a href="" target='_blank'>Project Page</a> 
+</h3>
 <table style="border:none;border-color:white;">
 <tr style="border:0px;border-color:white;">
     <td style="border:0px;border-color:white;"><img src="asserts/SPOT_Combo.gif" width="100%"/></td>
@@ -80,10 +80,11 @@ Download the video features and update the Video paths/output paths in ``` confi
  
 ### Model Training 
 ![](asserts/CVPR22_fig3_v2.png)
+
 To train SPOT from scratch run the following command. The training configurations can be adjusted from  ``` config/anet.yaml ``` file.
 This training includes both Pre-training and the fine-tuning stages.
 ```shell script
-python tags_train.py
+python spot_train.py
 ```
 ### Model Inference
 We provide the pretrained models containing the checkpoint for I3D features on ActivityNetv1.3 . It can be found in the [Link](https://drive.google.com/file/d/1ltF5AKee8JcdJmDPabJtXwJe1_m0X3Sc/view?usp=sharing)
@@ -91,7 +92,7 @@ We provide the pretrained models containing the checkpoint for I3D features on A
 After downloading the checkpoints, the checkpoints path can be saved in ``` config/anet.yaml ``` file.
 The model inference can be then performed using the following command 
 ```shell script
-python tags_inference.py
+python spot_inference.py
 ```
 ### Model Evaluation
 To evaluate our TAGS model run the following command. 
@@ -100,7 +101,10 @@ python eval.py
 ```
 
 ### Performance 
-![](assets/tags-result-2.png)
+![](asserts/results-quant.png)
+
+### Qualitative Results
+![](asserts/results-diag.png)
 
 ### TO-DO Checklist
 - [ ] Support for THUMOS14 dataset
