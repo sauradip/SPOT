@@ -24,7 +24,7 @@
 
 <h3 align="center">
   <a href="https://arxiv.org/abs/2207.07059" target='_blank'>Paper</a> |
-  <a href="" target='_blank'>Project Page</a> 
+  <a href="https://sauradip.github.io/project_pages/SPOT/" target='_blank'>Project Page</a> 
 </h3>
 <table style="border:none;border-color:white;">
 <tr style="border:0px;border-color:white;">
