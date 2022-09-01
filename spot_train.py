@@ -812,7 +812,7 @@ if __name__ == '__main__':
     start.record()
     # print(model.)
     print("Pretraining Start")
-    # pretrain(train_loader_pretrain,model,optimizer)
+    pretrain(train_loader_pretrain,model,optimizer)
     checkpoint_pre = torch.load(output_path + "/SPOT_pretrain_best.pth.tar")
     model.load_state_dict(checkpoint_pre['state_dict'])
     optimizer.load_state_dict(checkpoint_pre['optimizer'])
