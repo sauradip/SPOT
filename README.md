@@ -110,6 +110,10 @@ python eval.py
 - [ ] Support for THUMOS14 dataset
 - [ ] Enable multi-gpu training
 
+### Acknowlegement
+
+This code repository has borrowed some parts of [SSTAP](https://github.com/wangxiang1230/SSTAP). We thank the author for open-sourcing their codes and clarifying the doubts. 
+
 ## Citation
 If you find this project useful for your research, please use the following BibTeX entry.
 ```
