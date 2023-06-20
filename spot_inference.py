@@ -134,7 +134,7 @@ if __name__ == '__main__':
             ### classifier branch prediction ###
 
             if full_label:
-                best_cls = load_json("gsm_best_score.json")
+                best_cls = load_json("spot_best_score.json")
                 full_cls = best_cls[video_name]["class"]
                 full_cls_score = best_cls[video_name]["score"]
 
